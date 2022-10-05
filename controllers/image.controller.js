@@ -10,7 +10,7 @@ module.exports = {
 
       const randomName = filesNames[Math.floor(Math.random() * filesNames.length)];
 
-      res.json(`${BACKAND_URL}/static/${randomName}`);
+      res.json({image: `${BACKAND_URL}/static/${randomName}`});
     } catch (e) {
       next(e);
     }
